@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BNP Paribas Personal Finance — FP&A Intelligence Suite FY2024</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f4f5f7;--bg1:#fff;--bg2:#f9fafb;--txt:#111827;--txt2:#6b7280;--bdr:rgba(0,0,0,0.1);--fmono:'Courier New',monospace}
+@media(prefers-color-scheme:dark){:root{--bg:#0d1117;--bg1:#161b22;--bg2:#1c2128;--txt:#e6edf3;--txt2:#8b949e;--bdr:rgba(255,255,255,0.1)}}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',sans-serif;background:var(--bg);color:var(--txt);min-height:100vh}
+.hdr{background:var(--bg1);border-bottom:0.5px solid var(--bdr);padding:20px 28px 0}
+.hr{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:14px}
+.bdg{background:#dcfce7;color:#166534;font-size:10px;font-family:var(--fmono);padding:2px 8px;border-radius:4px;letter-spacing:0.06em;display:inline-block;margin-bottom:5px}
+.co{font-size:20px;font-weight:600;color:var(--txt)}
+.csb{font-size:11px;color:var(--txt2);font-family:var(--fmono);margin-top:3px}
+.hkv{font-size:22px;font-weight:600;color:#1D9E75;text-align:right}
+.hkl{font-size:10px;color:var(--txt2);font-family:var(--fmono);text-align:right}
+.tabs{display:flex;overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tbtn{padding:10px 14px;border:none;background:transparent;color:var(--txt2);font-size:12px;cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap;font-family:inherit;transition:all .15s}
+.tbtn.act{color:var(--txt);border-bottom-color:#1D9E75;font-weight:600}
+.tbtn:hover:not(.act){color:var(--txt)}
+.body{padding:20px 28px;max-width:1200px;margin:0 auto}
+.pnl{display:none}.pnl.act{display:block}
+.kg{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:16px}
+.kc{background:var(--bg1);border:0.5px solid var(--bdr);border-radius:8px;padding:14px 16px;position:relative;overflow:hidden}
+.kc::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--kc,#1D9E75)}
+.kl{font-size:10px;color:var(--txt2);letter-spacing:0.06em;text-transform:uppercase;font-family:var(--fmono);margin-bottom:5px}
+.kv{font-size:22px;font-weight:600;color:var(--txt);margin-bottom:3px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ks{font-size:11px;font-family:var(--fmono)}
+.g{color:#1D9E75}.r{color:#E24B4A}.s{color:var(--txt2)}
+.cc{background:var(--bg1);border:0.5px solid var(--bdr);border-radius:12px;padding:18px;margin-bottom:14px}
+.ct{font-size:10px;color:var(--txt2);letter-spacing:0.07em;text-transform:uppercase;font-family:var(--fmono);padding-bottom:10px;margin-bottom:14px;border-bottom:0.5px solid var(--bdr)}
+.cg{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+.dt{width:100%;border-collapse:collapse;font-size:11.5px;font-family:var(--fmono)}
+.dt th{text-align:right;padding:7px 10px;color:var(--txt2);font-weight:500;border-bottom:0.5px solid var(--bdr);font-size:10px;letter-spacing:0.04em}
+.dt td{text-align:right;padding:7px 10px;border-bottom:0.5px solid var(--bdr);color:var(--txt)}
+.dt tr:last-child td{border-bottom:none}
+.rag{display:inline-block;padding:1px 7px;border-radius:3px;font-size:10px;font-family:var(--fmono)}
+.rg{background:#dcfce7;color:#166534}.ra{background:#fef3c7;color:#92400e}.rr{background:#fee2e2;color:#7f1d1d}
+.sbs{display:flex;gap:8px;margin-bottom:12px}
+.sb{padding:5px 16px;border-radius:6px;border:0.5px solid var(--bdr);background:transparent;color:var(--txt2);font-size:11px;cursor:pointer;font-family:var(--fmono);transition:all .15s}
+.sb.sg{border-color:#1D9E75;color:#0F6E56;background:#dcfce7}
+.sb.sbl{border-color:#378ADD;color:#185FA5;background:#dbeafe}
+.sb.sbr{border-color:#E24B4A;color:#A32D2D;background:#fee2e2}
+.sd{font-size:11px;color:var(--txt2);font-family:var(--fmono);padding:10px 12px;background:var(--bg2);border-radius:6px;margin-bottom:14px;line-height:1.5}
+.pg{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+.pc{background:var(--bg1);border:0.5px solid var(--bdr);border-radius:12px;padding:16px}
+.pn{font-size:10px;text-transform:uppercase;letter-spacing:0.06em;font-family:var(--fmono);margin-bottom:3px}
+.pv{font-size:20px;font-weight:600;color:var(--txt)}
+.ps{font-size:11px;color:var(--txt2);font-family:var(--fmono);margin-bottom:12px}
+.mr{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+.mb{background:var(--bg2);border-radius:5px;padding:10px;text-align:center}
+.mv{font-size:14px;font-weight:600;font-family:var(--fmono)}
+.ml{font-size:10px;color:var(--txt2);margin-top:2px}
+.ftr{font-size:11px;color:var(--txt2);font-family:var(--fmono);text-align:center;padding:16px 0;border-top:0.5px solid var(--bdr);margin-top:8px}
+@media(max-width:640px){.kg,.cg,.pg{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="hdr">
+  <div class="hr">
+    <div>
+      <div><span class="bdg">&#9670; Case Study — Financial Services · Consumer Lending</span></div>
+      <div class="co">BNP Paribas Personal Finance</div>
+      <div class="csb">FP&amp;A Intelligence Suite · FY2024 · Analyst: Sai Manideep Bijjam — ESSEC MiM 2025</div>
+    </div>
+    <div>
+      <div class="hkv">&#8364;3,313M</div>
+      <div class="hkl">FY2024 Total Revenue</div>
+    </div>
+  </div>
+  <div class="tabs">
+    <button class="tbtn act" onclick="showTab('dash',this)">&#128202; KPI Dashboard</button>
+    <button class="tbtn" onclick="showTab('bva',this)">&#128203; Budget vs Actuals</button>
+    <button class="tbtn" onclick="showTab('fc',this)">&#128200; Rolling Forecast</button>
+    <button class="tbtn" onclick="showTab('ue',this)">&#128176; Unit Economics</button>
+    <button class="tbtn" onclick="showTab('cf',this)">&#128260; Cash Flow</button>
+  </div>
+</div>
+
+<div class="body">
+
+<!-- KPI DASHBOARD -->
+<div id="dash" class="pnl act">
+  <div class="kg">
+    <div class="kc" style="--kc:#1D9E75"><div class="kl">Total Revenue FY2024</div><div class="kv">&#8364;3,313M</div><div class="ks g">&#9650; +4.3% vs FY2023</div></div>
+    <div class="kc" style="--kc:#BA7517"><div class="kl">EBITDA</div><div class="kv">&#8364;982M</div><div class="ks g">Margin 29.6%</div></div>
+    <div class="kc" style="--kc:#378ADD"><div class="kl">Net Interest Income</div><div class="kv">&#8364;2,345M</div><div class="ks g">&#9650; +6.1% vs FY2023</div></div>
+    <div class="kc" style="--kc:#1D9E75"><div class="kl">Net Interest Margin</div><div class="kv">3.1%</div><div class="ks g">&#9650; Target &#8805;3.0%</div></div>
+    <div class="kc" style="--kc:#7F77DD"><div class="kl">Cost-to-Income Ratio</div><div class="kv">54.9%</div><div class="ks g">&#9650; Target &lt;58%</div></div>
+    <div class="kc" style="--kc:#E24B4A"><div class="kl">Total Cost of Risk</div><div class="kv">&#8364;513M</div><div class="ks r">93 bps on avg assets</div></div>
+  </div>
+  <div class="cc"><div class="ct">Monthly Revenue — NII + Fees + Insurance (&#8364;M)</div><div style="position:relative;height:230px"><canvas id="c1"></canvas></div></div>
+  <div class="cg">
+    <div class="cc"><div class="ct">Portfolio Mix by Product (%)</div><div style="position:relative;height:200px"><canvas id="c2"></canvas></div></div>
+    <div class="cc"><div class="ct">EBITDA by Geography (&#8364;M)</div><div style="position:relative;height:200px"><canvas id="c3"></canvas></div></div>
+  </div>
+</div>
+
+<!-- BUDGET VS ACTUALS -->
+<div id="bva" class="pnl">
+  <div class="kg">
+    <div class="kc" style="--kc:#1D9E75"><div class="kl">FY Actual Revenue</div><div class="kv">&#8364;3,313M</div><div class="ks s">Full year cumulative</div></div>
+    <div class="kc" style="--kc:#BA7517"><div class="kl">FY Budget Revenue</div><div class="kv">&#8364;3,175M</div><div class="ks s">Original annual plan</div></div>
+    <div class="kc" style="--kc:#1D9E75"><div class="kl">Total Variance</div><div class="kv">+&#8364;138M</div><div class="ks g">+4.3% above budget</div></div>
+  </div>
+  <div class="cc"><div class="ct">Budget vs Actuals — Monthly Revenue (&#8364;M)</div><div style="position:relative;height:240px"><canvas id="c4"></canvas></div></div>
+  <div class="cc"><div class="ct">Monthly Variance Detail — FY2024</div>
+    <table class="dt"><thead><tr><th style="text-align:left">Month</th><th>Budget</th><th>Actual</th><th>Variance &#8364;M</th><th>Var %</th><th>Status</th></tr></thead><tbody id="tb1"></tbody></table>
+  </div>
+</div>
+
+<!-- ROLLING FORECAST -->
+<div id="fc" class="pnl">
+  <div class="sbs">
+    <button class="sb sg" onclick="setScen('base',this)">&#128202; Base</button>
+    <button class="sb" onclick="setScen('bull',this)">&#128004; Bull</button>
+    <button class="sb" onclick="setScen('bear',this)">&#128059; Bear</button>
+  </div>
+  <div class="sd" id="scdesc">Base: stable macro environment, 4–5% revenue growth, CoR holds at 93bps, NIM stable at 3.1%</div>
+  <div class="cc"><div class="ct">H2 2024 Actuals + H1 2025 Rolling Revenue Forecast (&#8364;M)</div><div style="position:relative;height:260px"><canvas id="c5"></canvas></div></div>
+  <div class="cc"><div class="ct">H1 2025 Scenario Summary (&#8364;M)</div>
+    <table class="dt"><thead><tr><th style="text-align:left">Month</th><th>Bear</th><th>Base</th><th>Bull</th><th>Spread</th></tr></thead><tbody id="tb2"></tbody></table>
+  </div>
+</div>
+
+<!-- UNIT ECONOMICS -->
+<div id="ue" class="pnl">
+  <div class="pg" id="pcards"></div>
+  <div class="cc"><div class="ct">Product Profitability Matrix — Gross Yield vs NIM vs Cost of Risk (%)</div><div style="position:relative;height:220px"><canvas id="c6"></canvas></div></div>
+  <div class="cc"><div class="ct">Credit Quality & Risk-Adjusted Returns</div>
+    <table class="dt"><thead><tr><th style="text-align:left">Product</th><th>Portfolio &#8364;M</th><th>NIM %</th><th>NPL %</th><th>Coverage %</th><th>Risk-Adj Return</th></tr></thead><tbody id="tb3"></tbody></table>
+  </div>
+</div>
+
+<!-- CASH FLOW -->
+<div id="cf" class="pnl">
+  <div class="kg">
+    <div class="kc" style="--kc:#1D9E75"><div class="kl">Operating Cash Flow</div><div class="kv">&#8364;1,288M</div><div class="ks g">Core business generation</div></div>
+    <div class="kc" style="--kc:#378ADD"><div class="kl">Avg LCR (Basel III)</div><div class="kv">128%</div><div class="ks g">Min required: 100%</div></div>
+    <div class="kc" style="--kc:#BA7517"><div class="kl">Avg NSFR (Basel III)</div><div class="kv">112%</div><div class="ks g">Min required: 100%</div></div>
+  </div>
+  <div class="cc"><div class="ct">Monthly Cash Flow Components — Operating / Investing / Financing (&#8364;M)</div><div style="position:relative;height:240px"><canvas id="c7"></canvas></div></div>
+  <div class="cc"><div class="ct">Basel III Regulatory Liquidity Ratios — LCR & NSFR (%)</div><div style="position:relative;height:180px"><canvas id="c8"></canvas></div></div>
+  <div class="cc"><div class="ct">Cash Flow Summary FY2024 (&#8364;M)</div>
+    <table class="dt"><thead><tr><th style="text-align:left">Month</th><th>Operating</th><th>Investing</th><th>Financing</th><th>Net CF</th><th>Cumulative</th></tr></thead><tbody id="tb4"></tbody></table>
+  </div>
+</div>
+
+<div class="ftr">BNP Paribas Personal Finance &middot; FP&amp;A Case Study &middot; Sai Manideep Bijjam — ESSEC Master in Management &middot; Paris 2025</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+const M=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const raw=[[182,44,28,142,38,250],[178,41,27,139,35,248],[191,48,29,148,41,258],[185,46,28,144,39,253],[193,49,30,150,42,262],[199,52,31,154,44,268],[195,50,30,151,43,265],[188,47,29,146,40,256],[201,53,32,156,45,271],[205,55,33,159,47,275],[210,57,34,162,48,280],[218,60,35,167,51,289]];
+const D=raw.map(([nii,f,ins,op,cor,b],i)=>{const rev=nii+f+ins;return{m:M[i],nii,f,ins,op,cor,b,rev,ebitda:rev-op-cor,cir:op/rev*100,va:rev-b,vp:(rev-b)/b*100};});
+const PR=[{n:'Personal Loans',sh:38,y:8.4,cor:1.8,nim:6.6,vol:12400,npl:3.2},{n:'Auto Finance',sh:28,y:6.2,cor:0.9,nim:5.3,vol:9100,npl:1.8},{n:'Revolving Credit',sh:22,y:14.8,cor:3.2,nim:11.6,vol:7150,npl:5.1},{n:'Mortgage-linked',sh:12,y:3.9,cor:0.3,nim:3.6,vol:3900,npl:0.6}];
+const GE=[{c:'France',e:358},{c:'Germany',e:270},{c:'Italy',e:195},{c:'Spain',e:146},{c:'Other',e:79}];
+const FW=[{m:"Jan'25",base:295,bull:312,bear:271},{m:"Feb'25",base:298,bull:318,bear:268},{m:"Mar'25",base:308,bull:331,bear:276},{m:"Apr'25",base:304,bull:328,bear:272},{m:"May'25",base:315,bull:341,bear:280},{m:"Jun'25",base:322,bull:350,bear:285}];
+const CF=M.map((m,i)=>({m,ops:Math.round(85+i*3.2+Math.sin(i/2)*8),inv:-Math.round(28+i*1.2),fin:-Math.round(18+i*0.8),lcr:Math.round(128+Math.sin(i/3)*7),nsfr:Math.round(112+Math.sin(i/4)*4)}));
+const CL=['#1D9E75','#BA7517','#378ADD','#E24B4A','#7F77DD'];
+const dk=matchMedia('(prefers-color-scheme:dark)').matches;
+const gc=dk?'rgba(255,255,255,0.08)':'rgba(0,0,0,0.07)';
+const tc=dk?'#9ca3af':'#9ca3af';
+const tp={backgroundColor:dk?'#1c2128':'#fff',borderColor:gc,borderWidth:1,titleColor:dk?'#e5e7eb':'#111',bodyColor:tc,titleFont:{family:'monospace',size:11},bodyFont:{family:'monospace',size:11},padding:10};
+const sc={x:{grid:{color:gc},ticks:{color:tc,font:{family:'monospace',size:10}},border:{display:false}},y:{grid:{color:gc},ticks:{color:tc,font:{family:'monospace',size:10}},border:{display:false}}};
+const leg={display:true,labels:{color:tc,font:{family:'monospace',size:10},boxWidth:8,boxHeight:8,padding:10}};
+const ini={};const ch={};let cur='base';
+const SD={base:'Base: stable macro environment, 4–5% revenue growth, CoR holds at 93bps, NIM stable at 3.1%',bull:'Bull: rate tailwinds lift NIM +30bps, volume growth accelerates to +8%, CoR improves to 75bps',bear:'Bear: macro slowdown, CoR rises to 125bps, volume growth slows to +1%, NIM compresses 15bps'};
+
+function showTab(id,btn){
+  document.querySelectorAll('.pnl').forEach(p=>p.classList.remove('act'));
+  document.querySelectorAll('.tbtn').forEach(b=>b.classList.remove('act'));
+  document.getElementById(id).classList.add('act');
+  btn.classList.add('act');
+  setTimeout(()=>initTab(id),80);
+}
+
+function initTab(id){
+  if(ini[id])return;ini[id]=1;
+  if(id==='dash'){
+    ch.c1=new Chart(document.getElementById('c1'),{type:'bar',data:{labels:D.map(d=>d.m),datasets:[{label:'NII',data:D.map(d=>d.nii),backgroundColor:CL[0]+'bb',borderRadius:2},{label:'Fees',data:D.map(d=>d.f),backgroundColor:CL[1]+'bb',borderRadius:2},{label:'Insurance',data:D.map(d=>d.ins),backgroundColor:CL[2]+'bb',borderRadius:2}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:leg,tooltip:tp},scales:{x:{...sc.x,stacked:true},y:{...sc.y,stacked:true}}}});
+    ch.c2=new Chart(document.getElementById('c2'),{type:'bar',data:{labels:PR.map(p=>p.n.split(' ').slice(0,2).join(' ')),datasets:[{label:'Share %',data:PR.map(p=>p.sh),backgroundColor:CL.map(c=>c+'cc'),borderRadius:3}]},options:{responsive:true,maintainAspectRatio:false,indexAxis:'y',plugins:{legend:{display:false},tooltip:{...tp,callbacks:{label:ctx=>`${ctx.raw}%`}}},scales:{x:{...sc.x,ticks:{...sc.x.ticks,callback:v=>v+'%'}},y:sc.y}}});
+    ch.c3=new Chart(document.getElementById('c3'),{type:'bar',data:{labels:GE.map(g=>g.c),datasets:[{label:'EBITDA \u20acM',data:GE.map(g=>g.e),backgroundColor:CL.map(c=>c+'cc'),borderRadius:3}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:tp},scales:sc}});
+  }
+  if(id==='bva'){
+    ch.c4=new Chart(document.getElementById('c4'),{type:'bar',data:{labels:D.map(d=>d.m),datasets:[{label:'Budget \u20acM',data:D.map(d=>d.b),backgroundColor:CL[1]+'55',borderColor:CL[1],borderWidth:1.5,borderRadius:3},{label:'Actual \u20acM',data:D.map(d=>d.rev),backgroundColor:CL[0]+'99',borderColor:CL[0],borderWidth:1.5,borderRadius:3}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:leg,tooltip:tp},scales:sc}});
+    const tb=document.getElementById('tb1');
+    D.forEach(d=>{const rg=d.vp>2?'<span class="rag rg">On Track</span>':d.vp>-2?'<span class="rag ra">At Risk</span>':'<span class="rag rr">Behind</span>';tb.innerHTML+=`<tr><td style="text-align:left" class="s">${d.m}</td><td>${d.b}</td><td class="${d.va>=0?'g':'r'}">${d.rev}</td><td class="${d.va>=0?'g':'r'}">${d.va>0?'+':''}${d.va}</td><td class="${d.vp>=0?'g':'r'}">${d.vp>0?'+':''}${d.vp.toFixed(1)}%</td><td>${rg}</td></tr>`;});
+  }
+  if(id==='fc'){
+    const hl=D.slice(-6).map(d=>({m:d.m+"'24",a:d.rev}));
+    const lb=[...hl.map(h=>h.m),...FW.map(f=>f.m)];
+    const aD=[...hl.map(h=>h.a),...Array(6).fill(null)];
+    const bD=[...hl.map(h=>h.a),...FW.map(f=>f.base)];
+    const buD=[...Array(6).fill(null),...FW.map(f=>f.bull)];
+    const beD=[...Array(6).fill(null),...FW.map(f=>f.bear)];
+    ch.c5=new Chart(document.getElementById('c5'),{type:'line',data:{labels:lb,datasets:[{label:'Actual',data:aD,borderColor:dk?'#e5e7eb':'#374151',borderWidth:2.5,pointRadius:0,fill:false,tension:0.3,spanGaps:false},{label:'Base Forecast',data:bD,borderColor:CL[0],borderWidth:2,borderDash:[6,3],pointRadius:0,fill:false,tension:0.3,spanGaps:true},{label:'Bull',data:buD,borderColor:CL[2],borderWidth:1.5,borderDash:[4,4],pointRadius:0,fill:false,tension:0.3},{label:'Bear',data:beD,borderColor:CL[3],borderWidth:1.5,borderDash:[4,4],pointRadius:0,fill:false,tension:0.3}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:leg,tooltip:tp},scales:{x:{...sc.x,ticks:{...sc.x.ticks,maxRotation:45}},y:{...sc.y,min:240}}}});
+    updFc();
+    const tb=document.getElementById('tb2');
+    FW.forEach(f=>{tb.innerHTML+=`<tr><td style="text-align:left" class="s">${f.m}</td><td class="r">${f.bear}</td><td>${f.base}</td><td class="g">${f.bull}</td><td class="g">+${f.bull-f.bear}</td></tr>`;});
+  }
+  if(id==='ue'){
+    const pc=document.getElementById('pcards');
+    PR.forEach((p,i)=>{pc.innerHTML+=`<div class="pc"><div class="pn" style="color:${CL[i]}">${p.n}</div><div class="pv">\u20ac${p.vol.toLocaleString()}M</div><div class="ps">Outstanding portfolio &middot; ${p.sh}% of total mix</div><div class="mr"><div class="mb"><div class="mv">${p.y}%</div><div class="ml">Gross Yield</div></div><div class="mb"><div class="mv r">${p.cor}%</div><div class="ml">Cost of Risk</div></div><div class="mb"><div class="mv g">${p.nim}%</div><div class="ml">NIM</div></div></div></div>`;});
+    ch.c6=new Chart(document.getElementById('c6'),{type:'bar',data:{labels:PR.map(p=>p.n),datasets:[{label:'Gross Yield %',data:PR.map(p=>p.y),backgroundColor:CL[2]+'bb',borderRadius:3},{label:'Cost of Risk %',data:PR.map(p=>p.cor),backgroundColor:CL[3]+'bb',borderRadius:3},{label:'NIM %',data:PR.map(p=>p.nim),backgroundColor:CL[0]+'bb',borderRadius:3}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:leg,tooltip:tp},scales:sc}});
+    const tb=document.getElementById('tb3');
+    PR.forEach((p,i)=>{const cov=Math.round(120-p.npl*5);const rar=(p.nim-p.cor).toFixed(1);tb.innerHTML+=`<tr><td style="text-align:left;color:${CL[i]}">${p.n}</td><td>${p.vol.toLocaleString()}</td><td>${p.nim}%</td><td class="${p.npl>4?'r':p.npl<2?'g':''}">${p.npl}%</td><td class="g">${cov}%</td><td class="${parseFloat(rar)>6?'g':parseFloat(rar)<3?'r':''}">${rar}%</td></tr>`;});
+  }
+  if(id==='cf'){
+    ch.c7=new Chart(document.getElementById('c7'),{type:'bar',data:{labels:CF.map(d=>d.m),datasets:[{label:'Operating',data:CF.map(d=>d.ops),backgroundColor:CL[0]+'bb',borderRadius:2},{label:'Investing',data:CF.map(d=>d.inv),backgroundColor:CL[3]+'bb',borderRadius:2},{label:'Financing',data:CF.map(d=>d.fin),backgroundColor:CL[1]+'bb',borderRadius:2}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:leg,tooltip:tp},scales:{x:{...sc.x,stacked:true},y:{...sc.y,stacked:true}}}});
+    ch.c8=new Chart(document.getElementById('c8'),{type:'line',data:{labels:CF.map(d=>d.m),datasets:[{label:'LCR %',data:CF.map(d=>d.lcr),borderColor:CL[2],borderWidth:2,pointRadius:0,fill:false,tension:0.3},{label:'NSFR %',data:CF.map(d=>d.nsfr),borderColor:CL[1],borderWidth:2,pointRadius:0,fill:false,tension:0.3},{label:'Min 100%',data:CF.map(()=>100),borderColor:CL[3],borderWidth:1,borderDash:[4,4],pointRadius:0,fill:false}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:leg,tooltip:tp},scales:{x:sc.x,y:{...sc.y,min:95,max:142,ticks:{...sc.y.ticks,callback:v=>v+'%'}}}}});
+    const tb=document.getElementById('tb4');let cum=0;
+    CF.forEach(d=>{const net=d.ops+d.inv+d.fin;cum+=net;tb.innerHTML+=`<tr><td style="text-align:left" class="s">${d.m}</td><td class="g">+${d.ops}</td><td class="r">${d.inv}</td><td class="r">${d.fin}</td><td class="${net>=0?'g':'r'}">${net>0?'+':''}${net}</td><td>${cum}</td></tr>`;});
+  }
+}
+
+function setScen(s,btn){
+  cur=s;
+  document.querySelectorAll('.sb').forEach(b=>{b.className='sb'});
+  btn.className=`sb ${s==='base'?'sg':s==='bull'?'sbl':'sbr'}`;
+  document.getElementById('scdesc').textContent=SD[s];
+  updFc();
+}
+function updFc(){
+  if(!ch.c5)return;
+  const ds=ch.c5.data.datasets;
+  ds[1].hidden=cur!=='base';ds[2].hidden=cur!=='bull';ds[3].hidden=cur!=='bear';
+  ch.c5.update();
+}
+initTab('dash');
+</script>
+</body>
+</html>
