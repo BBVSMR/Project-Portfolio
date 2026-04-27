@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Danone S.A. — FP&A Intelligence Suite FY2023</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f4f5f7;--bg1:#fff;--bg2:#f9fafb;--txt:#111827;--txt2:#6b7280;--bdr:rgba(0,0,0,0.1);--fmono:'Courier New',monospace}
+@media(prefers-color-scheme:dark){:root{--bg:#0d1117;--bg1:#161b22;--bg2:#1c2128;--txt:#e6edf3;--txt2:#8b949e;--bdr:rgba(255,255,255,0.1)}}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',sans-serif;background:var(--bg);color:var(--txt);min-height:100vh}
+.hdr{background:var(--bg1);border-bottom:0.5px solid var(--bdr);padding:20px 28px 0}
+.hr{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:14px}
+.bdg{background:#fef3c7;color:#92400e;font-size:10px;font-family:var(--fmono);padding:2px 8px;border-radius:4px;letter-spacing:0.06em;display:inline-block;margin-bottom:5px}
+.co{font-size:20px;font-weight:600;color:var(--txt)}
+.csb{font-size:11px;color:var(--txt2);font-family:var(--fmono);margin-top:3px}
+.hkv{font-size:22px;font-weight:600;color:#BA7517;text-align:right}
+.hkl{font-size:10px;color:var(--txt2);font-family:var(--fmono);text-align:right}
+.tabs{display:flex;overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tbtn{padding:10px 14px;border:none;background:transparent;color:var(--txt2);font-size:12px;cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap;font-family:inherit;transition:all .15s}
+.tbtn.act{color:var(--txt);border-bottom-color:#BA7517;font-weight:600}
+.tbtn:hover:not(.act){color:var(--txt)}
+.body{padding:20px 28px;max-width:1200px;margin:0 auto}
+.pnl{display:none}.pnl.act{display:block}
+.kg{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:16px}
+.kc{background:var(--bg1);border:0.5px solid var(--bdr);border-radius:8px;padding:14px 16px;position:relative;overflow:hidden}
+.kc::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--kc,#BA7517)}
+.kl{font-size:10px;color:var(--txt2);letter-spacing:0.06em;text-transform:uppercase;font-family:var(--fmono);margin-bottom:5px}
+.kv{font-size:22px;font-weight:600;color:var(--txt);margin-bottom:3px}
+.ks{font-size:11px;font-family:var(--fmono)}
+.g{color:#1D9E75}.r{color:#E24B4A}.s{color:var(--txt2)}
+.cc{background:var(--bg1);border:0.5px solid var(--bdr);border-radius:12px;padding:18px;margin-bottom:14px}
+.ct{font-size:10px;color:var(--txt2);letter-spacing:0.07em;text-transform:uppercase;font-family:var(--fmono);padding-bottom:10px;margin-bottom:14px;border-bottom:0.5px solid var(--bdr)}
+.cg{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+.dt{width:100%;border-collapse:collapse;font-size:11.5px;font-family:var(--fmono)}
+.dt th{text-align:right;padding:7px 10px;color:var(--txt2);font-weight:500;border-bottom:0.5px solid var(--bdr);font-size:10px}
+.dt td{text-align:right;padding:7px 10px;border-bottom:0.5px solid var(--bdr);color:var(--txt)}
+.dt tr:last-child td{border-bottom:none}
+.rag{display:inline-block;padding:1px 7px;border-radius:3px;font-size:10px;font-family:var(--fmono)}
+.rg{background:#dcfce7;color:#166534}.ra{background:#fef3c7;color:#92400e}.rr{background:#fee2e2;color:#7f1d1d}
+.sbs{display:flex;gap:8px;margin-bottom:12px}
+.sb{padding:5px 16px;border-radius:6px;border:0.5px solid var(--bdr);background:transparent;color:var(--txt2);font-size:11px;cursor:pointer;font-family:var(--fmono);transition:all .15s}
+.sb.sg{border-color:#1D9E75;color:#0F6E56;background:#dcfce7}
+.sb.sbl{border-color:#378ADD;color:#185FA5;background:#dbeafe}
+.sb.sbr{border-color:#E24B4A;color:#A32D2D;background:#fee2e2}
+.sd{font-size:11px;color:var(--txt2);font-family:var(--fmono);padding:10px 12px;background:var(--bg2);border-radius:6px;margin-bottom:14px;line-height:1.5}
+.bug{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+.buc{background:var(--bg1);border:0.5px solid var(--bdr);border-radius:12px;padding:16px}
+.bun{font-size:10px;text-transform:uppercase;letter-spacing:0.06em;font-family:var(--fmono);margin-bottom:3px}
+.buv{font-size:20px;font-weight:600;color:var(--txt)}
+.bus{font-size:11px;color:var(--txt2);font-family:var(--fmono);margin-bottom:12px}
+.bmr{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+.bmb{background:var(--bg2);border-radius:5px;padding:10px;text-align:center}
+.bmv{font-size:14px;font-weight:600;font-family:var(--fmono)}
+.bml{font-size:10px;color:var(--txt2);margin-top:2px}
+.wkg{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:14px}
+.wkc{background:var(--bg1);border:0.5px solid var(--bdr);border-radius:8px;padding:14px;text-align:center}
+.wkv{font-size:28px;font-weight:600;font-family:var(--fmono)}
+.wkl{font-size:10px;color:var(--txt2);margin-top:3px;text-transform:uppercase;letter-spacing:0.05em}
+.wks{font-size:11px;font-family:var(--fmono);margin-top:4px}
+.ccc{background:var(--bg2);border-radius:8px;padding:16px;margin-bottom:14px;text-align:center}
+.cccv{font-size:32px;font-weight:600;color:#BA7517;font-family:var(--fmono)}
+.cccl{font-size:12px;color:var(--txt2);margin-top:6px}
+.ftr{font-size:11px;color:var(--txt2);font-family:var(--fmono);text-align:center;padding:16px 0;border-top:0.5px solid var(--bdr);margin-top:8px}
+@media(max-width:640px){.kg,.cg,.bug,.wkg{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="hdr">
+  <div class="hr">
+    <div>
+      <div><span class="bdg">&#9670; Case Study — FMCG · Consumer Goods</span></div>
+      <div class="co">Danone S.A.</div>
+      <div class="csb">FP&amp;A Intelligence Suite · FY2023 · Analyst: Sai Manideep Bijjam — ESSEC MiM 2025</div>
+    </div>
+    <div>
+      <div class="hkv">&#8364;27,700M</div>
+      <div class="hkl">FY2023 Net Revenue</div>
+    </div>
+  </div>
+  <div class="tabs">
+    <button class="tbtn act" onclick="showTab('dash',this)">&#128202; KPI Dashboard</button>
+    <button class="tbtn" onclick="showTab('bva',this)">&#128203; Budget vs Actuals</button>
+    <button class="tbtn" onclick="showTab('fc',this)">&#128200; Rolling Forecast</button>
+    <button class="tbtn" onclick="showTab('ue',this)">&#128176; Unit Economics</button>
+    <button class="tbtn" onclick="showTab('cf',this)">&#128260; Working Capital</button>
+  </div>
+</div>
+<div class="body">
+
+<div id="dash" class="pnl act">
+  <div class="kg">
+    <div class="kc" style="--kc:#BA7517"><div class="kl">Net Revenue FY2023</div><div class="kv">&#8364;27,700M</div><div class="ks g">&#9650; +6.1% vs FY2022</div></div>
+    <div class="kc" style="--kc:#1D9E75"><div class="kl">Gross Profit</div><div class="kv">&#8364;14,500M</div><div class="ks g">Gross Margin 52.3%</div></div>
+    <div class="kc" style="--kc:#378ADD"><div class="kl">Recurring EBITDA</div><div class="kv">&#8364;4,849M</div><div class="ks g">EBITDA Margin 17.5%</div></div>
+    <div class="kc" style="--kc:#7F77DD"><div class="kl">Free Cash Flow</div><div class="kv">&#8364;2,400M</div><div class="ks g">FCF Yield 8.7%</div></div>
+    <div class="kc" style="--kc:#BA7517"><div class="kl">Like-for-like Growth</div><div class="kv">+7.1%</div><div class="ks g">Volume +0.8% · Price +6.3%</div></div>
+    <div class="kc" style="--kc:#E24B4A"><div class="kl">Net Debt / EBITDA</div><div class="kv">2.8x</div><div class="ks r">Target &lt;3.0x · Watch level</div></div>
+  </div>
+  <div class="cc"><div class="ct">Monthly Net Revenue by Business Unit (&#8364;M)</div><div style="position:relative;height:230px"><canvas id="d1"></canvas></div></div>
+  <div class="cg">
+    <div class="cc"><div class="ct">Revenue Mix by BU (%)</div><div style="position:relative;height:200px"><canvas id="d2"></canvas></div></div>
+    <div class="cc"><div class="ct">Gross Margin by BU (%)</div><div style="position:relative;height:200px"><canvas id="d3"></canvas></div></div>
+  </div>
+</div>
+
+<div id="bva" class="pnl">
+  <div class="kg">
+    <div class="kc" style="--kc:#BA7517"><div class="kl">FY Actual Net Revenue</div><div class="kv">&#8364;27,700M</div><div class="ks s">Full year cumulative</div></div>
+    <div class="kc" style="--kc:#1D9E75"><div class="kl">FY Budget</div><div class="kv">&#8364;27,150M</div><div class="ks s">Original annual plan</div></div>
+    <div class="kc" style="--kc:#1D9E75"><div class="kl">Total Variance</div><div class="kv">+&#8364;550M</div><div class="ks g">+2.0% above budget</div></div>
+  </div>
+  <div class="cc"><div class="ct">Budget vs Actuals — Monthly Net Revenue (&#8364;M)</div><div style="position:relative;height:240px"><canvas id="d4"></canvas></div></div>
+  <div class="cc"><div class="ct">Monthly Variance Analysis — FY2023</div>
+    <table class="dt"><thead><tr><th style="text-align:left">Month</th><th>Budget</th><th>Actual</th><th>Var &#8364;M</th><th>Var %</th><th>Driver</th><th>Status</th></tr></thead><tbody id="dtb1"></tbody></table>
+  </div>
+</div>
+
+<div id="fc" class="pnl">
+  <div class="sbs">
+    <button class="sb sg" onclick="setScen('base',this)">&#128202; Base</button>
+    <button class="sb" onclick="setScen('bull',this)">&#128004; Bull</button>
+    <button class="sb" onclick="setScen('bear',this)">&#128059; Bear</button>
+  </div>
+  <div class="sd" id="dscdesc">Base: volume recovery +2%, pricing normalisation to +3%, gross margin expansion from input cost relief, LfL growth ~5%</div>
+  <div class="cc"><div class="ct">H2 2023 Actuals + H1 2024 Rolling Net Revenue Forecast (&#8364;M)</div><div style="position:relative;height:260px"><canvas id="d5"></canvas></div></div>
+  <div class="cc"><div class="ct">H1 2024 Scenario Summary (&#8364;M)</div>
+    <table class="dt"><thead><tr><th style="text-align:left">Month</th><th>Bear</th><th>Base</th><th>Bull</th><th>Spread</th></tr></thead><tbody id="dtb2"></tbody></table>
+  </div>
+</div>
+
+<div id="ue" class="pnl">
+  <div class="cc"><div class="ct">Gross-to-Net Revenue Waterfall — FY2023 (&#8364;M)</div><div style="position:relative;height:230px"><canvas id="d6"></canvas></div></div>
+  <div class="bug" id="bucards"></div>
+  <div class="cc"><div class="ct">BU Profitability Matrix — Gross Margin · Marketing · EBIT (%)</div><div style="position:relative;height:220px"><canvas id="d7"></canvas></div></div>
+</div>
+
+<div id="cf" class="pnl">
+  <div class="wkg">
+    <div class="wkc" style="border-top:2px solid #378ADD"><div class="wkv" style="color:#378ADD">42</div><div class="wkl">DSO (days)</div><div class="wks s">Days Sales Outstanding</div></div>
+    <div class="wkc" style="border-top:2px solid #BA7517"><div class="wkv" style="color:#BA7517">38</div><div class="wkl">DIO (days)</div><div class="wks s">Days Inventory Outstanding</div></div>
+    <div class="wkc" style="border-top:2px solid #1D9E75"><div class="wkv" style="color:#1D9E75">65</div><div class="wkl">DPO (days)</div><div class="wks g">Days Payable Outstanding</div></div>
+  </div>
+  <div class="ccc">
+    <div class="cccv">15 days</div>
+    <div class="cccl">Cash Conversion Cycle = DSO (42) + DIO (38) &minus; DPO (65) = <strong>15 days</strong></div>
+  </div>
+  <div class="cc"><div class="ct">Quarterly Working Capital Trends — DSO / DIO / DPO (days)</div><div style="position:relative;height:220px"><canvas id="d8"></canvas></div></div>
+  <div class="cc"><div class="ct">Monthly Operating Cash Flow vs Net Revenue (&#8364;M)</div><div style="position:relative;height:200px"><canvas id="d9"></canvas></div></div>
+</div>
+
+<div class="ftr">Danone S.A. &middot; FP&amp;A Case Study &middot; Sai Manideep Bijjam — ESSEC Master in Management &middot; Paris 2025</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+const MO=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const BU=[{n:'EDP',full:'Essential Dairy & Plant',col:'#BA7517',gm:48,mkt:12,ebit:8,share:42},{n:'Waters',full:'Waters',col:'#378ADD',gm:55,mkt:10,ebit:14,share:19},{n:'Spec. Nutrition',full:'Specialized Nutrition',col:'#1D9E75',gm:62,mkt:18,ebit:22,share:28},{n:'Med. Nutrition',full:'Medical Nutrition',col:'#7F77DD',gm:65,mkt:8,ebit:28,share:11}];
+const edp=[960,890,980,960,1000,1020,970,950,1010,1020,1060,814];
+const wat=[320,280,360,440,560,620,580,510,430,340,320,503];
+const snu=[660,620,680,680,700,710,680,680,700,720,740,786];
+const mnu=[240,260,300,200,90,70,960,140,240,370,460,117];
+const MNR=MO.map((_,i)=>edp[i]+wat[i]+snu[i]+mnu[i]);
+const BDG=[2130,2010,2270,2230,2290,2360,2140,2220,2320,2390,2510,2280];
+const FW2=[{m:"Jan'24",base:2280,bull:2380,bear:2150},{m:"Feb'24",base:2200,bull:2310,bear:2070},{m:"Mar'24",base:2430,bull:2560,bear:2280},{m:"Apr'24",base:2400,bull:2530,bear:2250},{m:"May'24",base:2490,bull:2630,bear:2320},{m:"Jun'24",base:2550,bull:2700,bear:2370}];
+const QWC=[{q:'Q1',dso:44,dio:40,dpo:62},{q:'Q2',dso:43,dio:39,dpo:63},{q:'Q3',dso:42,dio:38,dpo:64},{q:'Q4',dso:42,dio:38,dpo:65}];
+const DRIVERS=['Volume','Volume','Pricing','Pricing','Pricing','Mix','Volume','Pricing','Mix','Volume','Pricing','Mix'];
+const dk=matchMedia('(prefers-color-scheme:dark)').matches;
+const gc=dk?'rgba(255,255,255,0.08)':'rgba(0,0,0,0.07)';
+const tc=dk?'#9ca3af':'#9ca3af';
+const tp={backgroundColor:dk?'#1c2128':'#fff',borderColor:gc,borderWidth:1,titleColor:dk?'#e5e7eb':'#111',bodyColor:tc,titleFont:{family:'monospace',size:11},bodyFont:{family:'monospace',size:11},padding:10};
+const sc={x:{grid:{color:gc},ticks:{color:tc,font:{family:'monospace',size:10}},border:{display:false}},y:{grid:{color:gc},ticks:{color:tc,font:{family:'monospace',size:10}},border:{display:false}}};
+const leg={display:true,labels:{color:tc,font:{family:'monospace',size:10},boxWidth:8,boxHeight:8,padding:10}};
+const ini={};const ch={};let cur='base';
+const SD={base:'Base: volume recovery +2%, pricing normalisation to +3%, gross margin expansion from input cost relief, LfL growth ~5%',bull:'Bull: volume acceleration +4%, margin recovery ahead of plan, emerging market demand surge, LfL +8%',bear:'Bear: volume contraction -1%, consumer trade-down pressure, raw material spike, LfL flat to +1%'};
+
+function showTab(id,btn){
+  document.querySelectorAll('.pnl').forEach(p=>p.classList.remove('act'));
+  document.querySelectorAll('.tbtn').forEach(b=>b.classList.remove('act'));
+  document.getElementById(id).classList.add('act');btn.classList.add('act');
+  setTimeout(()=>initTab(id),80);
+}
+function initTab(id){
+  if(ini[id])return;ini[id]=1;
+  if(id==='dash'){
+    ch.d1=new Chart(document.getElementById('d1'),{type:'bar',data:{labels:MO,datasets:[{label:'EDP',data:edp,backgroundColor:'#BA751799',borderRadius:2},{label:'Waters',data:wat,backgroundColor:'#378ADD99',borderRadius:2},{label:'Spec. Nut.',data:snu,backgroundColor:'#1D9E7599',borderRadius:2},{label:'Med. Nut.',data:mnu,backgroundColor:'#7F77DD99',borderRadius:2}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:leg,tooltip:tp},scales:{x:{...sc.x,stacked:true},y:{...sc.y,stacked:true}}}});
+    ch.d2=new Chart(document.getElementById('d2'),{type:'bar',data:{labels:BU.map(b=>b.n),datasets:[{label:'Share %',data:BU.map(b=>b.share),backgroundColor:BU.map(b=>b.col+'cc'),borderRadius:3}]},options:{responsive:true,maintainAspectRatio:false,indexAxis:'y',plugins:{legend:{display:false},tooltip:{...tp,callbacks:{label:ctx=>`${ctx.raw}%`}}},scales:{x:{...sc.x,ticks:{...sc.x.ticks,callback:v=>v+'%'}},y:sc.y}}});
+    ch.d3=new Chart(document.getElementById('d3'),{type:'bar',data:{labels:BU.map(b=>b.n),datasets:[{label:'Gross Margin %',data:BU.map(b=>b.gm),backgroundColor:BU.map(b=>b.col+'cc'),borderRadius:3}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{...tp,callbacks:{label:ctx=>`${ctx.raw}%`}}},scales:{x:sc.x,y:{...sc.y,min:40,ticks:{...sc.y.ticks,callback:v=>v+'%'}}}}});
+  }
+  if(id==='bva'){
+    ch.d4=new Chart(document.getElementById('d4'),{type:'bar',data:{labels:MO,datasets:[{label:'Budget \u20acM',data:BDG,backgroundColor:'#BA751744',borderColor:'#BA7517',borderWidth:1.5,borderRadius:3},{label:'Actual \u20acM',data:MNR,backgroundColor:'#1D9E7599',borderColor:'#1D9E75',borderWidth:1.5,borderRadius:3}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:leg,tooltip:tp},scales:sc}});
+    const tb=document.getElementById('dtb1');
+    MO.forEach((m,i)=>{const va=MNR[i]-BDG[i];const vp=va/BDG[i]*100;const rg=vp>2?'<span class="rag rg">On Track</span>':vp>-2?'<span class="rag ra">At Risk</span>':'<span class="rag rr">Behind</span>';tb.innerHTML+=`<tr><td style="text-align:left" class="s">${m}</td><td>${BDG[i]}</td><td class="${va>=0?'g':'r'}">${MNR[i]}</td><td class="${va>=0?'g':'r'}">${va>0?'+':''}${va}</td><td class="${vp>=0?'g':'r'}">${vp>0?'+':''}${vp.toFixed(1)}%</td><td class="s">${DRIVERS[i]}</td><td>${rg}</td></tr>`;});
+  }
+  if(id==='fc'){
+    const hl=MNR.slice(-6).map((a,i)=>({m:MO[MO.length-6+i]+"'23",a}));
+    const lb=[...hl.map(h=>h.m),...FW2.map(f=>f.m)];
+    const aD=[...hl.map(h=>h.a),...Array(6).fill(null)];
+    const bD=[...hl.map(h=>h.a),...FW2.map(f=>f.base)];
+    const buD=[...Array(6).fill(null),...FW2.map(f=>f.bull)];
+    const beD=[...Array(6).fill(null),...FW2.map(f=>f.bear)];
+    ch.d5=new Chart(document.getElementById('d5'),{type:'line',data:{labels:lb,datasets:[{label:'Actual',data:aD,borderColor:dk?'#e5e7eb':'#374151',borderWidth:2.5,pointRadius:0,fill:false,tension:0.3,spanGaps:false},{label:'Base',data:bD,borderColor:'#BA7517',borderWidth:2,borderDash:[6,3],pointRadius:0,fill:false,tension:0.3,spanGaps:true},{label:'Bull',data:buD,borderColor:'#1D9E75',borderWidth:1.5,borderDash:[4,4],pointRadius:0,fill:false,tension:0.3},{label:'Bear',data:beD,borderColor:'#E24B4A',borderWidth:1.5,borderDash:[4,4],pointRadius:0,fill:false,tension:0.3}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:leg,tooltip:tp},scales:{x:{...sc.x,ticks:{...sc.x.ticks,maxRotation:45}},y:{...sc.y,min:1900}}}});
+    updDFc();
+    const tb=document.getElementById('dtb2');
+    FW2.forEach(f=>{tb.innerHTML+=`<tr><td style="text-align:left" class="s">${f.m}</td><td class="r">${f.bear}</td><td>${f.base}</td><td class="g">${f.bull}</td><td class="g">+${f.bull-f.bear}</td></tr>`;});
+  }
+  if(id==='ue'){
+    const wf=[{l:'Gross Revenue',v:32500,t:'total'},{l:'Trade Promotions',v:-2800,t:'neg'},{l:'Trade Discounts',v:-1200,t:'neg'},{l:'Returns & Allow.',v:-800,t:'neg'},{l:'Net Revenue',v:27700,t:'total'},{l:'COGS',v:-13200,t:'neg'},{l:'Gross Profit',v:14500,t:'total'}];
+    const base=[];const add=[];const sub=[];let run=0;
+    wf.forEach(w=>{if(w.t==='total'){base.push(0);add.push(w.v);sub.push(0);run=w.v;}else if(w.t==='neg'){base.push(run+w.v);add.push(0);sub.push(-w.v);run+=w.v;}});
+    ch.d6=new Chart(document.getElementById('d6'),{type:'bar',data:{labels:wf.map(w=>w.l),datasets:[{label:'Base',data:base,backgroundColor:'transparent',borderWidth:0},{label:'Positive',data:add,backgroundColor:'#1D9E7599',borderRadius:3},{label:'Deduction',data:sub,backgroundColor:'#E24B4A99',borderRadius:3}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{...tp,callbacks:{label:ctx=>{const w=wf[ctx.dataIndex];return`${w.l}: \u20ac${Math.abs(w.v).toLocaleString()}M`}}}},scales:{x:{...sc.x,ticks:{...sc.x.ticks,maxRotation:30,font:{family:'monospace',size:9}}},y:{...sc.y,stacked:true,ticks:{...sc.y.ticks,callback:v=>'\u20ac'+(v/1000).toFixed(0)+'B'}}}}});
+    const pc=document.getElementById('bucards');
+    const burevs=[11634,5263,7756,3047];
+    BU.forEach((b,i)=>{pc.innerHTML+=`<div class="buc"><div class="bun" style="color:${b.col}">${b.full}</div><div class="buv">\u20ac${burevs[i].toLocaleString()}M</div><div class="bus">${b.share}% of total net revenue</div><div class="bmr"><div class="bmb"><div class="bmv g">${b.gm}%</div><div class="bml">Gross Margin</div></div><div class="bmb"><div class="bmv" style="color:#7F77DD">${b.mkt}%</div><div class="bml">Marketing</div></div><div class="bmb"><div class="bmv g">${b.ebit}%</div><div class="bml">EBIT Margin</div></div></div></div>`;});
+    ch.d7=new Chart(document.getElementById('d7'),{type:'bar',data:{labels:BU.map(b=>b.n),datasets:[{label:'Gross Margin %',data:BU.map(b=>b.gm),backgroundColor:'#1D9E7599',borderRadius:3},{label:'Marketing %',data:BU.map(b=>b.mkt),backgroundColor:'#7F77DD99',borderRadius:3},{label:'EBIT Margin %',data:BU.map(b=>b.ebit),backgroundColor:'#BA751799',borderRadius:3}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:leg,tooltip:tp},scales:{x:sc.x,y:{...sc.y,ticks:{...sc.y.ticks,callback:v=>v+'%'}}}}});
+  }
+  if(id==='cf'){
+    ch.d8=new Chart(document.getElementById('d8'),{type:'line',data:{labels:QWC.map(q=>q.q),datasets:[{label:'DSO (days)',data:QWC.map(q=>q.dso),borderColor:'#378ADD',borderWidth:2,pointRadius:4,fill:false,tension:0.3},{label:'DIO (days)',data:QWC.map(q=>q.dio),borderColor:'#BA7517',borderWidth:2,pointRadius:4,fill:false,tension:0.3},{label:'DPO (days)',data:QWC.map(q=>q.dpo),borderColor:'#1D9E75',borderWidth:2,pointRadius:4,fill:false,tension:0.3}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:leg,tooltip:tp},scales:{x:sc.x,y:{...sc.y,min:30,max:72}}}});
+    const ocf=MO.map((_,i)=>Math.round(150+i*12+Math.sin(i/2)*25));
+    ch.d9=new Chart(document.getElementById('d9'),{type:'bar',data:{labels:MO,datasets:[{label:'Net Revenue \u20acM (scaled)',data:MNR.map(v=>Math.round(v/10)),backgroundColor:'#BA751733',borderColor:'#BA7517',borderWidth:1,borderRadius:2,type:'bar'},{label:'Oper. CF \u20acM',data:ocf,borderColor:'#1D9E75',borderWidth:2.5,pointRadius:0,fill:false,tension:0.3,type:'line'}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:leg,tooltip:tp},scales:{x:sc.x,y:sc.y}}});
+  }
+}
+function setScen(s,btn){
+  cur=s;document.querySelectorAll('.sb').forEach(b=>{b.className='sb'});
+  btn.className=`sb ${s==='base'?'sg':s==='bull'?'sbl':'sbr'}`;
+  document.getElementById('dscdesc').textContent=SD[s];
+  updDFc();
+}
+function updDFc(){
+  if(!ch.d5)return;
+  const ds=ch.d5.data.datasets;
+  ds[1].hidden=cur!=='base';ds[2].hidden=cur!=='bull';ds[3].hidden=cur!=='bear';
+  ch.d5.update();
+}
+initTab('dash');
+</script>
+</body>
+</html>

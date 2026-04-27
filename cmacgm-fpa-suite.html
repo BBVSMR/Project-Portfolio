@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CMA CGM S.A. — FP&A Intelligence Suite FY2023</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f4f5f7;--bg1:#fff;--bg2:#f9fafb;--txt:#111827;--txt2:#6b7280;--bdr:rgba(0,0,0,0.1);--fmono:'Courier New',monospace}
+@media(prefers-color-scheme:dark){:root{--bg:#0d1117;--bg1:#161b22;--bg2:#1c2128;--txt:#e6edf3;--txt2:#8b949e;--bdr:rgba(255,255,255,0.1)}}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',sans-serif;background:var(--bg);color:var(--txt);min-height:100vh}
+.hdr{background:var(--bg1);border-bottom:0.5px solid var(--bdr);padding:20px 28px 0}
+.hr{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:14px}
+.bdg{background:#dbeafe;color:#1e3a5f;font-size:10px;font-family:var(--fmono);padding:2px 8px;border-radius:4px;letter-spacing:0.06em;display:inline-block;margin-bottom:5px}
+.co{font-size:20px;font-weight:600;color:var(--txt)}
+.csb{font-size:11px;color:var(--txt2);font-family:var(--fmono);margin-top:3px}
+.hkv{font-size:22px;font-weight:600;color:#378ADD;text-align:right}
+.hkl{font-size:10px;color:var(--txt2);font-family:var(--fmono);text-align:right}
+.tabs{display:flex;overflow-x:auto;scrollbar-width:none}.tabs::-webkit-scrollbar{display:none}
+.tbtn{padding:10px 14px;border:none;background:transparent;color:var(--txt2);font-size:12px;cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap;font-family:inherit;transition:all .15s}
+.tbtn.act{color:var(--txt);border-bottom-color:#378ADD;font-weight:600}
+.tbtn:hover:not(.act){color:var(--txt)}
+.body{padding:20px 28px;max-width:1200px;margin:0 auto}
+.pnl{display:none}.pnl.act{display:block}
+.kg{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:16px}
+.kc{background:var(--bg1);border:0.5px solid var(--bdr);border-radius:8px;padding:14px 16px;position:relative;overflow:hidden}
+.kc::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--kc,#378ADD)}
+.kl{font-size:10px;color:var(--txt2);letter-spacing:0.06em;text-transform:uppercase;font-family:var(--fmono);margin-bottom:5px}
+.kv{font-size:22px;font-weight:600;color:var(--txt);margin-bottom:3px}
+.ks{font-size:11px;font-family:var(--fmono)}
+.g{color:#1D9E75}.r{color:#E24B4A}.s{color:var(--txt2)}.bl{color:#378ADD}
+.cc{background:var(--bg1);border:0.5px solid var(--bdr);border-radius:12px;padding:18px;margin-bottom:14px}
+.ct{font-size:10px;color:var(--txt2);letter-spacing:0.07em;text-transform:uppercase;font-family:var(--fmono);padding-bottom:10px;margin-bottom:14px;border-bottom:0.5px solid var(--bdr)}
+.cg{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+.dt{width:100%;border-collapse:collapse;font-size:11.5px;font-family:var(--fmono)}
+.dt th{text-align:right;padding:7px 10px;color:var(--txt2);font-weight:500;border-bottom:0.5px solid var(--bdr);font-size:10px}
+.dt td{text-align:right;padding:7px 10px;border-bottom:0.5px solid var(--bdr);color:var(--txt)}
+.dt tr:last-child td{border-bottom:none}
+.rag{display:inline-block;padding:1px 7px;border-radius:3px;font-size:10px;font-family:var(--fmono)}
+.rg{background:#dcfce7;color:#166534}.ra{background:#fef3c7;color:#92400e}.rr{background:#fee2e2;color:#7f1d1d}
+.sbs{display:flex;gap:8px;margin-bottom:12px}
+.sb{padding:5px 16px;border-radius:6px;border:0.5px solid var(--bdr);background:transparent;color:var(--txt2);font-size:11px;cursor:pointer;font-family:var(--fmono);transition:all .15s}
+.sb.sg{border-color:#1D9E75;color:#0F6E56;background:#dcfce7}
+.sb.sbl{border-color:#378ADD;color:#185FA5;background:#dbeafe}
+.sb.sbr{border-color:#E24B4A;color:#A32D2D;background:#fee2e2}
+.sd{font-size:11px;color:var(--txt2);font-family:var(--fmono);padding:10px 12px;background:var(--bg2);border-radius:6px;margin-bottom:14px;line-height:1.5}
+.rg4{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+.rc{background:var(--bg1);border:0.5px solid var(--bdr);border-radius:12px;padding:16px}
+.rn{font-size:10px;text-transform:uppercase;letter-spacing:0.06em;font-family:var(--fmono);margin-bottom:3px}
+.rv{font-size:20px;font-weight:600}
+.rs{font-size:11px;color:var(--txt2);font-family:var(--fmono);margin-bottom:12px}
+.rmr{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+.rmb{background:var(--bg2);border-radius:5px;padding:10px;text-align:center}
+.rmv{font-size:14px;font-weight:600;font-family:var(--fmono)}
+.rml{font-size:10px;color:var(--txt2);margin-top:2px}
+.fkg{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:16px}
+.fkc{background:var(--bg1);border:0.5px solid var(--bdr);border-radius:8px;padding:14px;text-align:center}
+.fkv{font-size:26px;font-weight:600;font-family:var(--fmono)}
+.fkl{font-size:10px;color:var(--txt2);text-transform:uppercase;letter-spacing:0.05em;margin-top:3px}
+.fks{font-size:11px;font-family:var(--fmono);margin-top:4px}
+.ftr{font-size:11px;color:var(--txt2);font-family:var(--fmono);text-align:center;padding:16px 0;border-top:0.5px solid var(--bdr);margin-top:8px}
+@media(max-width:640px){.kg,.cg,.rg4,.fkg{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="hdr">
+  <div class="hr">
+    <div>
+      <div><span class="bdg">&#9670; Case Study — Logistics · Container Shipping</span></div>
+      <div class="co">CMA CGM S.A.</div>
+      <div class="csb">FP&amp;A Intelligence Suite · FY2023 · Analyst: Sai Manideep Bijjam — ESSEC MiM 2025</div>
+    </div>
+    <div>
+      <div class="hkv">$21,540M</div>
+      <div class="hkl">FY2023 Total Revenue</div>
+    </div>
+  </div>
+  <div class="tabs">
+    <button class="tbtn act" onclick="showTab('dash',this)">&#128202; KPI Dashboard</button>
+    <button class="tbtn" onclick="showTab('bva',this)">&#128203; Budget vs Actuals</button>
+    <button class="tbtn" onclick="showTab('fc',this)">&#128200; Rolling Forecast</button>
+    <button class="tbtn" onclick="showTab('ue',this)">&#128674; Route Economics</button>
+    <button class="tbtn" onclick="showTab('cf',this)">&#128260; Fleet &amp; Capex</button>
+  </div>
+</div>
+<div class="body">
+
+<div id="dash" class="pnl act">
+  <div class="kg">
+    <div class="kc" style="--kc:#378ADD"><div class="kl">Total Revenue FY2023</div><div class="kv">$21,540M</div><div class="ks r">&#9660; -54.2% vs FY2022 peak</div></div>
+    <div class="kc" style="--kc:#1D9E75"><div class="kl">EBITDA</div><div class="kv">$4,810M</div><div class="ks g">Margin 22.3%</div></div>
+    <div class="kc" style="--kc:#BA7517"><div class="kl">Total Volumes</div><div class="kv">22.8M TEU</div><div class="ks g">&#9650; +2.4% vs FY2022</div></div>
+    <div class="kc" style="--kc:#378ADD"><div class="kl">Revenue / TEU</div><div class="kv">$945</div><div class="ks r">&#9660; -55% from 2022 ($2,100)</div></div>
+    <div class="kc" style="--kc:#1D9E75"><div class="kl">EBITDA / TEU</div><div class="kv">$211</div><div class="ks g">Above long-run avg $150</div></div>
+    <div class="kc" style="--kc:#7F77DD"><div class="kl">Fleet Utilisation</div><div class="kv">87%</div><div class="ks g">Target &#8805;85% — on track</div></div>
+  </div>
+  <div class="cc"><div class="ct">Monthly Revenue by Trade Lane ($M)</div><div style="position:relative;height:230px"><canvas id="c1"></canvas></div></div>
+  <div class="cg">
+    <div class="cc"><div class="ct">Volume Mix by Route (% TEU)</div><div style="position:relative;height:200px"><canvas id="c2"></canvas></div></div>
+    <div class="cc"><div class="ct">Monthly Revenue/TEU vs Freight Rate Index</div><div style="position:relative;height:200px"><canvas id="c3"></canvas></div></div>
+  </div>
+</div>
+
+<div id="bva" class="pnl">
+  <div class="kg">
+    <div class="kc" style="--kc:#378ADD"><div class="kl">FY Actual Revenue</div><div class="kv">$21,540M</div><div class="ks s">Full year cumulative</div></div>
+    <div class="kc" style="--kc:#BA7517"><div class="kl">FY Budget</div><div class="kv">$20,800M</div><div class="ks s">Set Jan 2023 — rate floor</div></div>
+    <div class="kc" style="--kc:#1D9E75"><div class="kl">Total Variance</div><div class="kv">+$740M</div><div class="ks g">+3.6% — volume outperformance</div></div>
+  </div>
+  <div class="cc"><div class="ct">Budget vs Actuals — Monthly Revenue ($M)</div><div style="position:relative;height:240px"><canvas id="c4"></canvas></div></div>
+  <div class="cc"><div class="ct">Monthly Variance Detail — FY2023</div>
+    <table class="dt"><thead><tr><th style="text-align:left">Month</th><th>Budget $M</th><th>Actual $M</th><th>Var $M</th><th>Var %</th><th>Driver</th><th>Status</th></tr></thead><tbody id="tb1"></tbody></table>
+  </div>
+</div>
+
+<div id="fc" class="pnl">
+  <div class="sbs">
+    <button class="sb sbl" onclick="setScen('base',this)">&#128202; Base</button>
+    <button class="sb" onclick="setScen('bull',this)">&#128004; Bull</button>
+    <button class="sb" onclick="setScen('bear',this)">&#128059; Bear</button>
+  </div>
+  <div class="sd" id="scdesc">Base: freight rate stabilisation at $900–950/TEU, volume growth +3%, Red Sea disruption partially resolved, EBITDA/TEU ~$200</div>
+  <div class="cc"><div class="ct">H2 2023 Actuals + H1 2024 Rolling Revenue Forecast ($M)</div><div style="position:relative;height:260px"><canvas id="c5"></canvas></div></div>
+  <div class="cc"><div class="ct">H1 2024 Scenario Summary ($M)</div>
+    <table class="dt"><thead><tr><th style="text-align:left">Month</th><th>Bear</th><th>Base</th><th>Bull</th><th>Spread</th><th>Key driver</th></tr></thead><tbody id="tb2"></tbody></table>
+  </div>
+</div>
+
+<div id="ue" class="pnl">
+  <div class="cc"><div class="ct">Cost per TEU Waterfall — Average FY2023 ($)</div><div style="position:relative;height:230px"><canvas id="c6"></canvas></div></div>
+  <div class="rg4" id="rcards"></div>
+  <div class="cc"><div class="ct">Route Profitability — Revenue/TEU vs EBITDA/TEU ($)</div><div style="position:relative;height:210px"><canvas id="c7"></canvas></div></div>
+</div>
+
+<div id="cf" class="pnl">
+  <div class="fkg">
+    <div class="fkc" style="border-top:2px solid #378ADD"><div class="fkv" style="color:#378ADD">613</div><div class="fkl">Vessels in fleet</div><div class="fks bl">3.4M TEU capacity</div></div>
+    <div class="fkc" style="border-top:2px solid #E24B4A"><div class="fkv" style="color:#E24B4A">$3,500M</div><div class="fkl">FY2023 Capex</div><div class="fks r">Fleet + terminals</div></div>
+    <div class="fkc" style="border-top:2px solid #1D9E75"><div class="fkv" style="color:#1D9E75">$5,520M</div><div class="fkl">Operating CF</div><div class="fks g">FCF $2,020M after capex</div></div>
+  </div>
+  <div class="cc"><div class="ct">Monthly Operating Cash Flow vs Capex ($M)</div><div style="position:relative;height:240px"><canvas id="c8"></canvas></div></div>
+  <div class="cc"><div class="ct">Bunker Fuel Cost — Actual vs Hedged Price ($/MT)</div><div style="position:relative;height:190px"><canvas id="c9"></canvas></div></div>
+  <div class="cc"><div class="ct">Fleet Capex Pipeline — FY2023–2026 Committed Orders ($M)</div>
+    <table class="dt"><thead><tr><th style="text-align:left">Year</th><th>Newbuilds</th><th>LNG-Dual Fuel</th><th>Terminal Invest.</th><th>Total Capex</th><th>Cumulative</th></tr></thead><tbody id="tb3"></tbody></table>
+  </div>
+</div>
+
+<div class="ftr">CMA CGM S.A. &middot; FP&amp;A Case Study &middot; Sai Manideep Bijjam — ESSEC Master in Management &middot; Paris 2025</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+const MO=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const ae=[780,720,760,700,650,615,600,640,660,680,660,655];
+const tp2=[580,540,560,520,490,460,450,470,490,510,495,490];
+const ta=[390,360,370,345,325,310,305,315,325,340,330,325];
+const ot=[320,300,315,290,270,255,250,260,270,280,270,265];
+const REV=MO.map((_,i)=>ae[i]+tp2[i]+ta[i]+ot[i]);
+const BDG=[1960,1820,1890,1820,1700,1580,1540,1600,1640,1700,1640,1710];
+const DRIVERS=['Rate','Volume','Volume','Volume','Rate','Rate','Rate','Volume','Volume','Mix','Mix','Volume'];
+const FW=[{m:"Jan'24",base:1820,bull:2050,bear:1580},{m:"Feb'24",base:1700,bull:1920,bear:1480},{m:"Mar'24",base:1950,bull:2210,bear:1680},{m:"Apr'24",base:1880,bull:2130,bear:1620},{m:"May'24",base:1980,bull:2260,bear:1700},{m:"Jun'24",base:2050,bull:2340,bear:1750}];
+const ROUTES=[{n:'Asia\u2013Europe',col:'#378ADD',sh:35,rteu:1050,eteu:285,vol:7980,util:91},{n:'Trans-Pacific',col:'#1D9E75',sh:28,rteu:920,eteu:195,vol:6384,util:88},{n:'Trans-Atlantic',col:'#BA7517',sh:18,rteu:1100,eteu:315,vol:4104,util:85},{n:'LATAM/Africa',col:'#7F77DD',sh:19,rteu:780,eteu:115,vol:4332,util:84}];
+const BUNKER_ACT=[620,590,575,560,545,530,520,540,555,570,560,550];
+const BUNKER_HDG=[600,600,600,600,580,580,580,580,560,560,560,560];
+const OPCF=MO.map((_,i)=>Math.round(380+i*15+Math.sin(i/2)*40));
+const CAPEX=MO.map((_,i)=>Math.round(180+Math.sin(i/1.5)*60));
+const PIPELINE=[{y:'FY2023',nb:1800,lng:900,term:800,tot:3500},{y:'FY2024',nb:2100,lng:1200,term:700,tot:4000},{y:'FY2025',nb:2500,lng:1800,term:600,tot:4900},{y:'FY2026',nb:1600,lng:2200,term:500,tot:4300}];
+const SCEN={base:'Base: freight rate stabilisation at $900\u2013950/TEU, volume growth +3%, Red Sea disruption partially resolved, EBITDA/TEU ~$200',bull:'Bull: Red Sea fully normalised, China export surge, freight rates rebound to $1,200/TEU, volume +6%, EBITDA/TEU $320',bear:'Bear: Red Sea escalation extends, overcapacity pressure, rates fall to $650/TEU, volume flat, EBITDA/TEU $80'};
+const dk=matchMedia('(prefers-color-scheme:dark)').matches;
+const gc=dk?'rgba(255,255,255,0.08)':'rgba(0,0,0,0.07)';
+const tc=dk?'#9ca3af':'#9ca3af';
+const tp={backgroundColor:dk?'#1c2128':'#fff',borderColor:gc,titleColor:dk?'#e5e7eb':'#111',bodyColor:tc,titleFont:{family:'monospace',size:11},bodyFont:{family:'monospace',size:11},padding:10};
+const sc={x:{grid:{color:gc},ticks:{color:tc,font:{family:'monospace',size:10}},border:{display:false}},y:{grid:{color:gc},ticks:{color:tc,font:{family:'monospace',size:10}},border:{display:false}}};
+const leg={display:true,labels:{color:tc,font:{family:'monospace',size:10},boxWidth:8,boxHeight:8,padding:10}};
+const ini={};const ch={};let cur='base';
+
+function showTab(id,btn){
+  document.querySelectorAll('.pnl').forEach(p=>p.classList.remove('act'));
+  document.querySelectorAll('.tbtn').forEach(b=>b.classList.remove('act'));
+  document.getElementById(id).classList.add('act');btn.classList.add('act');
+  setTimeout(()=>initTab(id),80);
+}
+function initTab(id){
+  if(ini[id])return;ini[id]=1;
+  if(id==='dash'){
+    ch.c1=new Chart(document.getElementById('c1'),{type:'bar',data:{labels:MO,datasets:[{label:'Asia\u2013Europe',data:ae,backgroundColor:'#378ADD99',borderRadius:2},{label:'Trans-Pacific',data:tp2,backgroundColor:'#1D9E7599',borderRadius:2},{label:'Trans-Atlantic',data:ta,backgroundColor:'#BA751799',borderRadius:2},{label:'LATAM/Africa',data:ot,backgroundColor:'#7F77DD99',borderRadius:2}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:leg,tooltip:tp},scales:{x:{...sc.x,stacked:true},y:{...sc.y,stacked:true}}}});
+    ch.c2=new Chart(document.getElementById('c2'),{type:'bar',data:{labels:ROUTES.map(r=>r.n),datasets:[{label:'Volume share %',data:ROUTES.map(r=>r.sh),backgroundColor:ROUTES.map(r=>r.col+'cc'),borderRadius:3}]},options:{responsive:true,maintainAspectRatio:false,indexAxis:'y',plugins:{legend:{display:false},tooltip:{...tp,callbacks:{label:ctx=>`${ctx.raw}%`}}},scales:{x:{...sc.x,ticks:{...sc.x.ticks,callback:v=>v+'%'}},y:sc.y}}});
+    ch.c3=new Chart(document.getElementById('c3'),{type:'line',data:{labels:MO,datasets:[{label:'Rev/TEU $',data:REV.map(r=>Math.round(r*1000/1900)),borderColor:'#378ADD',borderWidth:2,pointRadius:0,fill:false,tension:0.3,yAxisID:'y'},{label:'Freight Index',data:REV.map((r,i)=>Math.round(r/REV[0]*100+Math.sin(i/2)*3)),borderColor:'#BA7517',borderWidth:1.5,borderDash:[4,4],pointRadius:0,fill:false,tension:0.3,yAxisID:'y2'}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:leg,tooltip:tp},scales:{x:sc.x,y:{...sc.y,position:'left'},y2:{...sc.y,position:'right',grid:{display:false}}}}});
+  }
+  if(id==='bva'){
+    ch.c4=new Chart(document.getElementById('c4'),{type:'bar',data:{labels:MO,datasets:[{label:'Budget $M',data:BDG,backgroundColor:'#378ADD33',borderColor:'#378ADD',borderWidth:1.5,borderRadius:3},{label:'Actual $M',data:REV,backgroundColor:'#1D9E7599',borderColor:'#1D9E75',borderWidth:1.5,borderRadius:3}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:leg,tooltip:tp},scales:sc}});
+    const tb=document.getElementById('tb1');
+    MO.forEach((m,i)=>{const va=REV[i]-BDG[i];const vp=va/BDG[i]*100;const rg=vp>2?'<span class="rag rg">On Track</span>':vp>-2?'<span class="rag ra">At Risk</span>':'<span class="rag rr">Behind</span>';tb.innerHTML+=`<tr><td style="text-align:left" class="s">${m}</td><td>${BDG[i]}</td><td class="${va>=0?'g':'r'}">${REV[i]}</td><td class="${va>=0?'g':'r'}">${va>0?'+':''}${va}</td><td class="${vp>=0?'g':'r'}">${vp>0?'+':''}${vp.toFixed(1)}%</td><td class="s">${DRIVERS[i]}</td><td>${rg}</td></tr>`;});
+  }
+  if(id==='fc'){
+    const hl=REV.slice(-6).map((a,i)=>({m:MO[MO.length-6+i]+"'23",a}));
+    const lb=[...hl.map(h=>h.m),...FW.map(f=>f.m)];
+    ch.c5=new Chart(document.getElementById('c5'),{type:'line',data:{labels:lb,datasets:[{label:'Actual',data:[...hl.map(h=>h.a),...Array(6).fill(null)],borderColor:dk?'#e5e7eb':'#374151',borderWidth:2.5,pointRadius:0,fill:false,tension:0.3,spanGaps:false},{label:'Base',data:[...hl.map(h=>h.a),...FW.map(f=>f.base)],borderColor:'#378ADD',borderWidth:2,borderDash:[6,3],pointRadius:0,fill:false,tension:0.3,spanGaps:true},{label:'Bull',data:[...Array(6).fill(null),...FW.map(f=>f.bull)],borderColor:'#1D9E75',borderWidth:1.5,borderDash:[4,4],pointRadius:0,fill:false,tension:0.3},{label:'Bear',data:[...Array(6).fill(null),...FW.map(f=>f.bear)],borderColor:'#E24B4A',borderWidth:1.5,borderDash:[4,4],pointRadius:0,fill:false,tension:0.3}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:leg,tooltip:tp},scales:{x:{...sc.x,ticks:{...sc.x.ticks,maxRotation:45}},y:{...sc.y,min:1300}}}});
+    updFc();
+    const tb=document.getElementById('tb2');
+    const KD=['Rate','Volume','Rate+Vol','Rate','Volume','Rate+Vol'];
+    FW.forEach((f,i)=>{tb.innerHTML+=`<tr><td style="text-align:left" class="s">${f.m}</td><td class="r">${f.bear}</td><td>${f.base}</td><td class="g">${f.bull}</td><td class="g">+${f.bull-f.bear}</td><td class="s">${KD[i]}</td></tr>`;});
+  }
+  if(id==='ue'){
+    const wf=[{l:'Revenue/TEU',v:945,t:'total'},{l:'Bunker Fuel',v:-280,t:'neg'},{l:'Port & Terminal',v:-165,t:'neg'},{l:'Ship Operations',v:-175,t:'neg'},{l:'SG&A',v:-95,t:'neg'},{l:'Other OpEx',v:-19,t:'neg'},{l:'EBITDA/TEU',v:211,t:'total'}];
+    const base2=[];const add2=[];const sub2=[];let run=0;
+    wf.forEach(w=>{if(w.t==='total'){base2.push(0);add2.push(w.v);sub2.push(0);run=w.v;}else{base2.push(run+w.v);add2.push(0);sub2.push(-w.v);run+=w.v;}});
+    ch.c6=new Chart(document.getElementById('c6'),{type:'bar',data:{labels:wf.map(w=>w.l),datasets:[{label:'Base',data:base2,backgroundColor:'transparent',borderWidth:0},{label:'Revenue',data:add2,backgroundColor:'#378ADD99',borderRadius:3},{label:'Cost',data:sub2,backgroundColor:'#E24B4A99',borderRadius:3}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{...tp,callbacks:{label:ctx=>{const w=wf[ctx.dataIndex];return`${w.l}: ${w.v>0?'+':''}$${w.v}/TEU`}}}},scales:{x:{...sc.x,ticks:{...sc.x.ticks,font:{family:'monospace',size:9}}},y:{...sc.y,stacked:true,ticks:{...sc.y.ticks,callback:v=>'$'+v}}}}});
+    const pc=document.getElementById('rcards');
+    ROUTES.forEach(r=>{pc.innerHTML+=`<div class="rc"><div class="rn" style="color:${r.col}">${r.n}</div><div class="rv" style="color:${r.col}">${r.vol.toLocaleString()}k TEU</div><div class="rs">${r.sh}% of total volume &middot; ${r.util}% utilisation</div><div class="rmr"><div class="rmb"><div class="rmv bl">$${r.rteu}</div><div class="rml">Rev/TEU</div></div><div class="rmb"><div class="rmv g">$${r.eteu}</div><div class="rml">EBITDA/TEU</div></div><div class="rmb"><div class="rmv" style="color:#7F77DD">${r.util}%</div><div class="rml">Utilisation</div></div></div></div>`;});
+    ch.c7=new Chart(document.getElementById('c7'),{type:'bar',data:{labels:ROUTES.map(r=>r.n),datasets:[{label:'Revenue/TEU $',data:ROUTES.map(r=>r.rteu),backgroundColor:ROUTES.map(r=>r.col+'99'),borderRadius:3},{label:'EBITDA/TEU $',data:ROUTES.map(r=>r.eteu),backgroundColor:ROUTES.map(r=>r.col+'dd'),borderRadius:3}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:leg,tooltip:tp},scales:{x:sc.x,y:{...sc.y,ticks:{...sc.y.ticks,callback:v=>'$'+v}}}}});
+  }
+  if(id==='cf'){
+    ch.c8=new Chart(document.getElementById('c8'),{type:'bar',data:{labels:MO,datasets:[{label:'Oper. CF $M',data:OPCF,backgroundColor:'#1D9E7599',borderRadius:2,type:'bar'},{label:'Capex $M',data:CAPEX.map(v=>-v),backgroundColor:'#E24B4A99',borderRadius:2,type:'bar'},{label:'Free CF $M',data:OPCF.map((o,i)=>o-CAPEX[i]),borderColor:'#378ADD',borderWidth:2,pointRadius:0,fill:false,tension:0.3,type:'line'}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:leg,tooltip:tp},scales:sc}});
+    ch.c9=new Chart(document.getElementById('c9'),{type:'line',data:{labels:MO,datasets:[{label:'Actual $/MT',data:BUNKER_ACT,borderColor:'#E24B4A',borderWidth:2,pointRadius:0,fill:false,tension:0.3},{label:'Hedged $/MT',data:BUNKER_HDG,borderColor:'#1D9E75',borderWidth:2,borderDash:[5,3],pointRadius:0,fill:false,tension:0.3}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:leg,tooltip:tp},scales:{x:sc.x,y:{...sc.y,min:480,ticks:{...sc.y.ticks,callback:v=>'$'+v}}}}});
+    const tb=document.getElementById('tb3');let cum=0;
+    PIPELINE.forEach(p=>{cum+=p.tot;tb.innerHTML+=`<tr><td style="text-align:left" class="s">${p.y}</td><td class="bl">${p.nb.toLocaleString()}</td><td class="g">${p.lng.toLocaleString()}</td><td class="s">${p.term.toLocaleString()}</td><td class="r">${p.tot.toLocaleString()}</td><td>${cum.toLocaleString()}</td></tr>`;});
+  }
+}
+function setScen(s,btn){
+  cur=s;document.querySelectorAll('.sb').forEach(b=>{b.className='sb'});
+  btn.className=`sb ${s==='base'?'sbl':s==='bull'?'sg':'sbr'}`;
+  document.getElementById('scdesc').textContent=SCEN[s];
+  updFc();
+}
+function updFc(){
+  if(!ch.c5)return;
+  const ds=ch.c5.data.datasets;
+  ds[1].hidden=cur!=='base';ds[2].hidden=cur!=='bull';ds[3].hidden=cur!=='bear';
+  ch.c5.update();
+}
+initTab('dash');
+const OPCF=MO.map((_,i)=>Math.round(380+i*15+Math.sin(i/2)*40));
+const CAPEX=MO.map((_,i)=>Math.round(180+Math.sin(i/1.5)*60));
+</script>
+</body>
+</html>
